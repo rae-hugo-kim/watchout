@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'>
+<rect width='100%' height='100%' fill='#eef2ff'/>
+<rect x='470' y='130' width='260' height='420' rx='40' fill='#111827'/>
+<rect x='500' y='180' width='200' height='260' rx='18' fill='#dbeafe'/>
+<text x='600' y='320' font-size='42' text-anchor='middle' fill='#1e3a8a'>기본 조작</text>
+<text x='600' y='370' font-size='28' text-anchor='middle' fill='#1e40af'>터치 · 스와이프 · 버튼</text>
+</svg>
