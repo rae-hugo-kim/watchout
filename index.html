@@ -10,88 +10,130 @@
     <header class="hero">
       <h1>갤럭시 워치8 쉽게 배우기</h1>
       <p>아빠를 위한 큰 글씨 · 따라하기 가이드</p>
-      <a class="btn" href="#quick-start">바로 시작하기</a>
     </header>
 
     <main>
-      <section id="quick-start" class="card">
-        <h2>빠른 시작 (처음 5분)</h2>
-        <ol>
-          <li>워치를 손목에 착용하고 전원을 켜세요.</li>
-          <li>휴대폰과 블루투스 연결이 되었는지 확인하세요.</li>
-          <li>아래에서 배우고 싶은 기능을 선택하세요.</li>
-        </ol>
-      </section>
+      <nav class="card pager" aria-label="페이지 이동">
+        <button class="page-btn active" data-go="1">1단계: 기본</button>
+        <button class="page-btn" data-go="2" id="go-advanced" disabled>2단계: 심화</button>
+      </nav>
 
-      <section class="grid">
-        <a href="#basic" class="feature">기본 조작</a>
-        <a href="#call" class="feature">전화 받기</a>
-        <a href="#find-phone" class="feature">내 핸드폰 찾기</a>
-        <a href="#health" class="feature">건강 측정</a>
-      </section>
+      <div class="page" data-page="1">
+        <section id="quick-start" class="card">
+          <h2>빠른 시작 (처음 5분)</h2>
+          <ol>
+            <li>워치를 손목에 착용하고 전원을 켜세요.</li>
+            <li>휴대폰과 블루투스 연결이 되었는지 확인하세요.</li>
+            <li>아래 4개를 순서대로 해보세요.</li>
+          </ol>
+        </section>
 
-      <section id="basic" class="card tutorial">
-        <h2>1) 기본 조작</h2>
-        <img src="assets/basic.svg" alt="워치 기본 조작 이미지" />
-        <p class="goal">목표: 화면 켜기, 스와이프, 버튼 사용 익히기</p>
-        <ol>
-          <li>워치 화면을 한번 눌러 켭니다.</li>
-          <li>왼쪽/오른쪽으로 밀어 위젯을 넘겨봅니다.</li>
-          <li>위에서 아래로 밀어 빠른 설정을 엽니다.</li>
-          <li>아래에서 위로 밀어 앱 목록을 엽니다.</li>
-          <li>옆 버튼을 눌러 홈으로 돌아갑니다.</li>
-        </ol>
-        <label><input type="checkbox" /> 완료! 기본 조작을 해봤어요</label>
-      </section>
+        <section class="grid">
+          <a href="#basic" class="feature">기본 조작</a>
+          <a href="#call" class="feature">전화 받기</a>
+          <a href="#find-phone" class="feature">내 핸드폰 찾기</a>
+          <a href="#health" class="feature">건강 측정</a>
+        </section>
 
-      <section id="call" class="card tutorial">
-        <h2>2) 전화 받기</h2>
-        <img src="assets/call.svg" alt="워치에서 전화 받기 이미지" />
-        <p class="goal">목표: 전화 오면 워치에서 바로 받기</p>
-        <ol>
-          <li>전화가 오면 화면의 초록 버튼을 누릅니다.</li>
-          <li>말할 때는 워치를 입 가까이 가져갑니다.</li>
-          <li>통화를 끝낼 때는 빨간 버튼을 누릅니다.</li>
-          <li>소리가 크면 측면 버튼으로 볼륨을 조절합니다.</li>
-        </ol>
-        <label><input type="checkbox" /> 완료! 워치에서 통화해봤어요</label>
-      </section>
+        <section id="basic" class="card tutorial">
+          <h2>1) 기본 조작</h2>
+          <img src="assets/basic.svg" alt="워치 기본 조작 이미지" />
+          <p class="goal">목표: 화면 켜기, 스와이프, 버튼 사용 익히기</p>
+          <p class="note"><strong>스와이프(쓸어넘기기)</strong>: 손가락을 화면에 댄 채로 한 방향으로 미는 동작이에요.</p>
+          <ol>
+            <li>워치 화면을 한번 눌러 켭니다.</li>
+            <li>왼쪽/오른쪽으로 쓸어넘겨 위젯을 넘겨봅니다.</li>
+            <li>위에서 아래로 쓸어내려 빠른 설정을 엽니다.</li>
+            <li>아래에서 위로 쓸어올려 앱 목록을 엽니다.</li>
+            <li>옆 버튼을 눌러 홈으로 돌아갑니다.</li>
+          </ol>
+          <label><input type="checkbox" /> 완료! 기본 조작을 해봤어요</label>
+        </section>
 
-      <section id="find-phone" class="card tutorial">
-        <h2>3) 내 핸드폰 찾기</h2>
-        <img src="assets/find-phone.png" alt="워치로 핸드폰 찾기 이미지" />
-        <p class="goal">목표: 휴대폰이 안 보일 때 벨 울리기</p>
-        <ol>
-          <li>워치 화면을 위에서 아래로 내려 빠른 설정을 엽니다.</li>
-          <li>"휴대폰 찾기" 아이콘을 누릅니다.</li>
-          <li>휴대폰에서 소리가 나면 소리를 따라 찾습니다.</li>
-          <li>찾았으면 휴대폰 화면에서 소리 끄기를 누릅니다.</li>
-        </ol>
-        <label><input type="checkbox" /> 완료! 핸드폰 찾기 성공했어요</label>
-      </section>
+        <section id="call" class="card tutorial">
+          <h2>2) 전화 받기</h2>
+          <img src="assets/call.svg" alt="워치에서 전화 받기 이미지" />
+          <p class="goal">목표: 전화 오면 워치에서 바로 받기</p>
+          <ol>
+            <li>전화가 오면 화면의 초록 버튼을 누릅니다.</li>
+            <li>말할 때는 워치를 입 가까이 가져갑니다.</li>
+            <li>통화를 끝낼 때는 빨간 버튼을 누릅니다.</li>
+            <li>소리가 크면 측면 버튼으로 볼륨을 조절합니다.</li>
+          </ol>
+          <label><input type="checkbox" /> 완료! 워치에서 통화해봤어요</label>
+        </section>
 
-      <section id="health" class="card tutorial">
-        <h2>4) 건강 측정 (심박/스트레스/체성분)</h2>
-        <img src="assets/health.png" alt="워치 건강 측정 이미지" />
-        <p class="goal">목표: 건강 앱에서 기본 측정 3가지를 실행하기</p>
-        <ol>
-          <li>앱 목록에서 Samsung Health를 엽니다.</li>
-          <li>심박수 측정을 누르고 30초간 가만히 있습니다.</li>
-          <li>스트레스 측정을 누르고 편하게 호흡합니다.</li>
-          <li>체성분 측정은 안내 자세를 따라 15초 유지합니다.</li>
-        </ol>
-        <p class="note">주의: 측정 전 손목을 건조하게 하고, 밴드를 너무 느슨하지 않게 착용하세요.</p>
-        <label><input type="checkbox" /> 완료! 건강 측정을 해봤어요</label>
-      </section>
+        <section id="find-phone" class="card tutorial">
+          <h2>3) 내 핸드폰 찾기</h2>
+          <img src="assets/find-phone.png" alt="워치로 핸드폰 찾기 이미지" />
+          <p class="goal">목표: 휴대폰이 안 보일 때 벨 울리기</p>
+          <ol>
+            <li>워치 화면을 위에서 아래로 내려 빠른 설정을 엽니다.</li>
+            <li>"휴대폰 찾기" 아이콘을 누릅니다.</li>
+            <li>휴대폰에서 소리가 나면 소리를 따라 찾습니다.</li>
+            <li>찾았으면 휴대폰 화면에서 소리 끄기를 누릅니다.</li>
+          </ol>
+          <label><input type="checkbox" /> 완료! 핸드폰 찾기 성공했어요</label>
+        </section>
 
-      <section class="card">
-        <h2>문제 생기면</h2>
-        <ul>
-          <li><strong>워치가 반응이 느려요:</strong> 전원 버튼 길게 눌러 재시작</li>
-          <li><strong>전화 수신이 안 와요:</strong> 휴대폰 블루투스 연결 상태 확인</li>
-          <li><strong>측정이 자꾸 실패해요:</strong> 워치를 손목 위쪽에 밀착 착용</li>
-        </ul>
-      </section>
+        <section id="health" class="card tutorial">
+          <h2>4) 건강 측정 (심박/스트레스/체성분)</h2>
+          <img src="assets/health.png" alt="워치 건강 측정 이미지" />
+          <p class="goal">목표: 건강 앱에서 기본 측정 3가지를 실행하기</p>
+          <ol>
+            <li>앱 목록에서 Samsung Health를 엽니다.</li>
+            <li>심박수 측정을 누르고 30초간 가만히 있습니다.</li>
+            <li>스트레스 측정을 누르고 편하게 호흡합니다.</li>
+            <li>체성분 측정은 안내 자세를 따라 15초 유지합니다.</li>
+          </ol>
+          <p class="note">주의: 측정 전 손목을 건조하게 하고, 밴드를 너무 느슨하지 않게 착용하세요.</p>
+          <label><input type="checkbox" /> 완료! 건강 측정을 해봤어요</label>
+        </section>
+
+        <section class="card unlock-box" id="unlock-box">
+          <h2>다음 단계로 가기</h2>
+          <p id="progress-text">진행률: 0 / 4 완료</p>
+          <button class="btn next-btn" id="next-page" disabled>심화 과정 열기</button>
+        </section>
+      </div>
+
+      <div class="page hidden" data-page="2">
+        <section class="card">
+          <h2>심화 과정 1) 제미나이 호출해서 물어보기</h2>
+          <p class="goal">목표: 궁금한 걸 말로 바로 물어보고 답 듣기</p>
+          <ol>
+            <li>워치에서 앱 목록을 열고 <strong>Gemini</strong>를 실행합니다.</li>
+            <li>마이크 버튼을 누른 뒤 또박또박 질문합니다.</li>
+            <li>예시: "오늘 날씨 알려줘", "10분 뒤 알람 맞춰줘"</li>
+            <li>답변이 길면 "짧게 다시 말해줘"라고 다시 요청합니다.</li>
+          </ol>
+          <p class="note">※ 워치에서 Gemini가 바로 안 보이면, 휴대폰 Galaxy Wearable 앱에서 앱 동기화를 먼저 확인하세요.</p>
+        </section>
+
+        <section class="card">
+          <h2>심화 과정 2) 음성으로 일정/알람 만들기</h2>
+          <ol>
+            <li>Gemini에 "내일 오전 9시에 병원 알림"이라고 말합니다.</li>
+            <li>등록 내용이 맞는지 확인 후 저장합니다.</li>
+            <li>같은 방식으로 약 복용/산책/운동 알림을 만듭니다.</li>
+          </ol>
+        </section>
+
+        <section class="card">
+          <h2>심화 과정 3) 위급 시 빠른 연락 연습</h2>
+          <ol>
+            <li>연락처 즐겨찾기에 가족 번호를 등록합니다.</li>
+            <li>워치에서 최근 통화 또는 즐겨찾기에서 바로 전화합니다.</li>
+            <li>실전처럼 1번 연습해두면 실제 상황에서 훨씬 빨라집니다.</li>
+          </ol>
+        </section>
+
+        <section class="card">
+          <h2>심화 과정 완료 🎉</h2>
+          <p>아빠 이제 워치 핵심 기능 + AI 호출까지 가능!</p>
+          <button class="btn" data-go="1">기본 과정 다시 보기</button>
+        </section>
+      </div>
     </main>
 
     <footer>
